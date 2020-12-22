@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Visualizer</title>
+
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./StyleSheets/markupStyle.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="functions" id="todo">
+        <button class="btn" onclick="generateArray()">
+          Generate New Array
+        </button>
+
+        <div id="range">
+          <label for="sze">Array Size</label>
+          <input type="range" id="sze" min="1" max="99" step="1" />
+          <label for="spd">Sorting Speed</label>
+          <input type="range" id="spd" min="1" max="5" step="1" />
+        </div>
+      </div>
+
+      <div class="functions" id="algos">
+        <button class="btn">Bubble Sort</button>
+        <button class="btn">Selection Sort</button>
+        <button class="btn">Insertion Sort</button>
+        <button class="btn">Merge Sort</button>
+        <button class="btn">Quick Sort</button>
+        <button class="btn">Heap Sort</button>
+      </div>
+
+      <div class="functions" id="sort">
+        <button id="start">START</button>
+      </div>
+    </nav>
+
+    <section id="array-container"></section>
+
+    <script src="./Scripts/main.js"></script>
+    <script src="./Scripts/animations.js"></script>
+
+    <script src="./Scripts/Algorithms/bubbleSort.js"></script>
+    <script src="./Scripts/Algorithms/selectionSort.js"></script>
+    <script src="./Scripts/Algorithms/insertionSort.js"></script>
+    <script src="./Scripts/Algorithms/mergeSort.js"></script>
+    <script src="./Scripts/Algorithms/quickSort.js"></script>
+    <script src="./Scripts/Algorithms/heapSort.js"></script>
+  </body>
+</html>

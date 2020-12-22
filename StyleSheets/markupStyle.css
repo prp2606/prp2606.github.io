@@ -1,0 +1,90 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #f5f0e1;
+  font-family: "Baloo Bhai 2", cursive;
+  color: white;
+}
+
+button {
+  color: white;
+  background-color: #ef9d1f;
+  border: none;
+  outline: none;
+  padding: 2px 8px;
+  font-family: "Baloo Bhai 2", cursive;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #b97f28;
+  cursor: pointer;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0px;
+  background-color: #3b4d61;
+}
+
+#navbar .functions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar #todo {
+  align-items: space-evenly;
+  justify-content: space-evenly;
+  width: 30%;
+}
+
+#navbar #todo #range input {
+  display: block;
+  cursor: pointer;
+}
+
+#navbar #algos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  width: 60%;
+}
+
+#navbar #sort {
+  width: 20%;
+}
+
+#navbar #range input[typr="range"] {
+  color: rgb(0, 0, 0);
+}
+
+#array-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 70%;
+  margin: auto;
+  height: 85vh;
+}
+
+.arraybar {
+  border-radius: 5px;
+}
+
+.disabled {
+  background-color: rgb(160, 152, 137);
+}
+
+.disabled:hover {
+  background-color: rgb(160, 152, 137);
+  cursor: not-allowed;
+}

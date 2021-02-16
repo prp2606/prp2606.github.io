@@ -70,3 +70,15 @@ function enableActions() {
     location.reload();
   }, (delay += 2000));
 }
+
+let algoBtns = Array.from(document.querySelectorAll("#algos>.btn"));
+
+const highlight = (insideText) => {
+  algoBtns.forEach((element) => {
+    if (element.innerText === insideText) {
+      element.style.backgroundColor = "blue";
+    } else {
+      element.style.backgroundColor = "#ef9d1f";
+    }
+  });
+};

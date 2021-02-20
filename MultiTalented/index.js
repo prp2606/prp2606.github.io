@@ -17,7 +17,7 @@ multiTalented.engine("html", engines.mustache);
 multiTalented.set("view engine", "html");
 
 multiTalented.get("/", (req, res) => {
-  res.status(200).render("home.html");
+  res.status(200).render("index.html");
 });
 
 multiTalented.get("/expenseTracker", (req, res) => {

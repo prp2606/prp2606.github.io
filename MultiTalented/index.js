@@ -12,7 +12,7 @@ multiTalented.use(express.urlencoded());
 multiTalented.use(express.static(__dirname + "/public"));
 var engines = require("consolidate");
 
-multiTalented.set("views", __dirname + "/views");
+multiTalented.set("views", __dirname + "/");
 multiTalented.engine("html", engines.mustache);
 multiTalented.set("view engine", "html");
 

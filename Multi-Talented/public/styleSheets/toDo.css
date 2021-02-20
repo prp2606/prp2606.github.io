@@ -1,0 +1,25 @@
+.mainContainer {
+  width: 75%;
+}
+
+@media only screen and (max-width: 500px) {
+  .mainContainer {
+    width: 90%;
+  }
+
+  #adjust {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #adjust .col-8,
+  #adjust .col-4 {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  .mainContainer {
+    width: 100%;
+  }
+}

@@ -1,0 +1,15 @@
+.mainContainer {
+  width: 75%;
+}
+
+@media only screen and (max-width: 500px) {
+  .mainContainer {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  .mainContainer {
+    width: 100%;
+  }
+}

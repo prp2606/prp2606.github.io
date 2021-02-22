@@ -1,0 +1,225 @@
+@media only screen and (max-width: 900px) {
+  #intro {
+    height: 100vh;
+  }
+
+  nav {
+    background-color: black;
+  }
+
+  #navigation {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100px;
+  }
+
+  #navigation p.line {
+    display: none;
+  }
+
+  #hamBurger {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .hamBurgerBtn {
+    width: 80%;
+    height: 10%;
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+  }
+
+  #slide1,
+  #slide2,
+  #slide3 {
+    transition: all 0.5s ease-in-out;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .navItems {
+    width: 100vw;
+    height: 0vh;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: black;
+    clip-path: circle(0px at 93.3% 7.8%);
+    -webkit-transition: all 500ms ease-in-out 200ms;
+    -moz-transition: all 500ms ease-in-out 200ms;
+    -o-transition: all 500ms ease-in-out 200ms;
+    transition: all 500ms ease-in-out 200ms;
+  }
+
+  .navLinks {
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px;
+  }
+
+  /* Animation */
+  .open {
+    pointer-events: all;
+  }
+  .open #slide2 {
+    transform: translateX(-20px);
+    background-color: transparent;
+  }
+
+  .open #slide1 {
+    transform: rotate(45deg) translate(8px, 8px);
+  }
+
+  .open #slide3 {
+    transform: rotate(-45deg) translate(8px, -8px);
+  }
+
+  #dynamicPhrase,
+  .dynamicPhrase {
+    margin: 20px 0px;
+    font-size: 2.5rem;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  #intro {
+    width: 95vw;
+  }
+
+  #myWork,
+  #contactMe,
+  footer {
+    width: 100vw;
+  }
+
+  #aboutMe,
+  #front,
+  #myWork,
+  #contactMe {
+    animation: none;
+  }
+
+  .btn:hover {
+    transform: translate(1);
+  }
+
+  #projects {
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  #tabHelper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 400%;
+    transition: all 0.5s ease-in-out 0s;
+  }
+
+  .projectItem {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  #sortingVisualizer,
+  #chatArc,
+  #portfolioTemplate,
+  #multipageLayout {
+    width: 70%;
+    height: inherit;
+  }
+
+  .detail {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    transition: all 0.6s ease-in-out 0s;
+    transform: translateY(-400px);
+  }
+
+  .detail::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    opacity: 0.4;
+  }
+
+  .leftBtn,
+  .rightBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #contact {
+    flex-direction: column;
+  }
+
+  #options,
+  #shorthands {
+    width: 100%;
+  }
+
+  #shorthands {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  #shorthands a {
+    width: inherit;
+    margin: auto;
+  }
+
+  #shorthands #call,
+  #shorthands #mail {
+    display: flex;
+  }
+
+  #shorthands a:hover {
+    transform: translate(1);
+  }
+
+  #email,
+  #phone {
+    display: none;
+  }
+
+  #mail,
+  #call {
+    display: block;
+  }
+}

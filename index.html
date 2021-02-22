@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pratik Patil</title>
+
+    <!--Favicon  -->
+
+    <!-- FontAwesome kit code -->
+    <script
+      src="https://kit.fontawesome.com/9bb26dd2b9.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Roboto Slab', serif; -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Ubuntu', sans-serif; -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Rubik', sans-serif; -->
+
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="./StyleSheets/mainStyle.css" />
+    <link rel="stylesheet" href="./StyleSheets/laptopSmall.css" />
+    <link rel="stylesheet" href="./StyleSheets/tablet.css" />
+    <link rel="stylesheet" href="./StyleSheets/mobileDevices.css" />
+
+    <link
+      rel="shortcut icon"
+      href="./Images/Icons/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- Fixed Background -->
+    <section id="fixedBG">
+      <div id="runningAnimation"></div>
+      <div id="car">
+        <img
+          id="carNightImg"
+          src="./Images/Backgrounds/Cars/carNight.png"
+          alt="Car"
+        />
+        <img
+          id="carDayImg"
+          src="./Images/Backgrounds/Cars/carDay.png"
+          alt="Car"
+          style="display: none"
+        />
+      </div>
+    </section>
+
+    <section id="opaque"></section>
+
+    <!-- Scroll to top button -->
+    <button class="btn" id="scrollToTop" onclick="toTop()">&uArr;</button>
+
+    <!-- Modes button -->
+    <div id="modes">
+      <span id="lightMode" onclick="lightModeOn()"
+        ><img src="./Images/Icons/sunMode.png" alt="Light Mode"
+      /></span>
+      <span id="darkMode" onclick="darkModeOn()" style="display: none"
+        ><img src="./Images/Icons/moonMode.png" alt="Dark Mode"
+      /></span>
+    </div>
+
+    <!-- Navigation -->
+    <section id="navigation">
+      <nav>
+        <a href="#"><h1 id="logo">PP</h1></a>
+        <ul class="navItems">
+          <li class="navLinks" onclick="activateTab('Introduction')">
+            <a href="#"
+              >Introduction
+              <p class="line" style="border: 0.2px solid white"></p
+            ></a>
+          </li>
+          <li class="navLinks" onclick="activateTab('About Me')">
+            <a href="#aboutMe"
+              >About Me
+              <p class="line"></p
+            ></a>
+          </li>
+          <li class="navLinks" onclick="activateTab('Skills and Education')">
+            <a href="#skillsAndEducation"
+              >Skills and Education
+              <p class="line"></p
+            ></a>
+          </li>
+          <li class="navLinks" onclick="activateTab('My Work')">
+            <a href="#myWork"
+              >My Work
+              <p class="line"></p
+            ></a>
+          </li>
+          <li class="navLinks" onclick="activateTab('Contact Me')">
+            <a href="#contactMe"
+              >Contact Me
+              <p class="line"></p
+            ></a>
+          </li>
+        </ul>
+        <!-- Hamburger -->
+        <!-- <div id="tabChange"> -->
+        <!-- <a href="#"><h1>PP</h1></a> -->
+        <div id="hamBurger">
+          <div class="hamBurgerBtn" id="slide1"></div>
+          <div class="hamBurgerBtn" id="slide2"></div>
+          <div class="hamBurgerBtn" id="slide3"></div>
+        </div>
+        <!-- </div> -->
+      </nav>
+      <p class="line" style="width: 90%; margin: auto"></p>
+    </section>
+
+    <!-- Introduction Section -->
+    <section id="intro">
+      <h1 id="dynamicPhrase">
+        <span class="dynamicPhrase"></span><span class="cursor">&nbsp;</span>
+      </h1>
+      <p id="staticPhrase">An Aspiring Full Stack Web Developer</p>
+
+      <p class="line" style="margin: 0%; width: 60%"></p>
+
+      <div id="linksToMe">
+        <a
+          target="_blank"
+          href="https://www.facebook.com/profile.php?id=100027397309682"
+          ><img src="./Images/Icons/facebook.png" alt="Facebook"
+        /></a>
+        <a target="_blank" href="https://github.com/prp2606/"
+          ><img src="./Images/Icons/github.png" alt="GitHub"
+        /></a>
+        <a target="_blank" href="https://www.instagram.com/prp2606_45/"
+          ><img src="./Images/Icons/instagram.png" alt="Instagram"
+        /></a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/pratikravindrapatil2606"
+          ><img src="./Images/Icons/linkedin.png" alt="Linkedin"
+        /></a>
+        <a
+          target="_blank"
+          href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=pratikravindrapatil2606@gmail.com"
+          ><img src="./Images/Icons/mail.png" alt="Mail"
+        /></a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="aboutMe">
+      <h1 class="title">
+        About Me
+        <p class="line animeLine" style="opacity: 1"></p>
+      </h1>
+      <div class="content">
+        <div id="front">
+          <p><i>Hover me!</i></p>
+          <img src="./Images/Me/myImage2.jpeg" alt="Me" />
+          <p><i>Hover me!</i></p>
+        </div>
+        <div id="back">
+          <div class="primaryInfo">
+            <div id="primaryInfo">
+              <p style="text-align: center">
+                I am a 3rd year undergraduate, pursuing B.Tech at
+                <b>IIT Roorkee</b>. I grind HTML and CSS and then weld them with
+                Javascript into beautiful as well as efficient <b>websites</b>.
+              </p>
+            </div>
+            <h3 class="title" style="font-size: 1.5rem; text-align: center">
+              Primary Me &#127891;
+            </h3>
+            <p>
+              &#8640; &nbsp; I am a 3rd year undergraduate, pursuing B.Tech at
+              <b>IIT Roorkee</b>.
+            </p>
+            <p>
+              &#8640; &nbsp; I'm very intruiged and passionate about creating
+              different <b>full stack web applications</b>.
+            </p>
+            <p>
+              &#8640; &nbsp; I grind HTML and CSS and then weld them with
+              Javascript into beautiful as well as efficient
+              <b>websites</b>.
+            </p>
+            <button id="btn1" class="btn" onclick="knowMore()">
+              Know More!
+            </button>
+          </div>
+
+          <div class="secondaryInfo">
+            <div id="secondaryInfo">
+              <p style="text-align: center">
+                I prefer <b>DARK</b> mode. Cricket addict. Love listening.
+                Anyone up for bike trip?
+              </p>
+            </div>
+            <h3 class="title" style="font-size: 1.5rem; text-align: center">
+              Some Insights! &#128513;
+            </h3>
+            <p>&#8640; &nbsp; I prefer <b>DARK</b> mode</p>
+            <p>&#8640; &nbsp; Cricket addict</p>
+            <p>&#8640; &nbsp; Love listening</p>
+            <p>&#8640; &nbsp; Biking over hiking</p>
+            <p>&#8640; &nbsp; Anyone up for bike trip?</p>
+            <button id="btn2" class="btn" onclick="back()">Back</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills and Education section -->
+    <section id="skillsAndEducation">
+      <h1 class="title">
+        Skills And Education
+        <p class="line animeLine" style="opacity: 1"></p>
+      </h1>
+      <div class="skillsAndEducationContainer">
+        <div id="skillsAndEducationContainer">
+          <div id="skillContainer">
+            <div id="skills">
+              <div id="languages">
+                <div class="mobileHelper">
+                  <div class="text">
+                    SKILLS
+                    <p class="line animeLine" style="opacity: 1"></p>
+                    <p>Languages</p>
+                  </div>
+                  <div class="languages">
+                    <div id="cpp">
+                      <div class="lbar" style="background-color: #00dfdf">
+                        0%
+                      </div>
+                      <p>C++</p>
+                    </div>
+                    <div id="java">
+                      <div class="lbar" style="background-color: #ffb500">
+                        0%
+                      </div>
+                      <p>JAVA</p>
+                    </div>
+                    <div id="javascript">
+                      <div class="lbar" style="background-color: crimson">
+                        0%
+                      </div>
+                      <p>JAVASCRIPT</p>
+                    </div>
+                    <div id="html">
+                      <div class="lbar" style="background-color: magenta">
+                        0%
+                      </div>
+                      <p>HTML</p>
+                    </div>
+                    <div id="css">
+                      <div class="lbar" style="background-color: darkorange">
+                        0%
+                      </div>
+                      <p>CSS</p>
+                    </div>
+                    <button
+                      class="btn"
+                      onclick="seeProgress1()"
+                      style="margin: 10px 50px; display: inline-block"
+                    >
+                      See Progress
+                    </button>
+                    <button
+                      class="btn"
+                      id="goToFrameworks"
+                      onclick="dragDown()"
+                      style="
+                        margin: 10px 50px;
+                        display: inline-block;
+                        display: none;
+                      "
+                    >
+                      Frameworks &#8615;
+                    </button>
+                  </div>
+                </div>
+                <button class="btn" id="rightBtn1" onclick="goToEducation()">
+                  &#8674;
+                </button>
+              </div>
+              <div id="frameworks">
+                <div class="mobileHelper">
+                  <div class="text">
+                    SKILLS
+                    <p class="line animeLine" style="opacity: 1"></p>
+                    <p>Frameworks</p>
+                  </div>
+                  <div class="frameworks">
+                    <div id="nodejs">
+                      <div class="fbar" style="background-color: #db7800">
+                        0%
+                      </div>
+                      <p>NODEJS</p>
+                    </div>
+                    <div id="expressjs">
+                      <div class="fbar" style="background-color: blueviolet">
+                        0%
+                      </div>
+                      <p>EXPRESSJS</p>
+                    </div>
+                    <div id="bootstrap">
+                      <div class="fbar" style="background-color: magenta">
+                        0%
+                      </div>
+                      <p>BOOTSTRAP</p>
+                    </div>
+                    <div id="reactjs">
+                      <div class="fbar" style="background-color: #54a900">
+                        0%
+                      </div>
+                      <p>REACTJS</p>
+                    </div>
+                    <div id="mongodb">
+                      <div class="fbar" style="background-color: darkred">
+                        0%
+                      </div>
+                      <p>MONGODB</p>
+                    </div>
+                    <button
+                      class="btn"
+                      onclick="seeProgress2()"
+                      style="margin: 10px 50px; display: inline-block"
+                    >
+                      See Progress
+                    </button>
+                    <button
+                      class="btn"
+                      id="goToLanguages"
+                      onclick="dragUp()"
+                      style="margin: 10px 50px; display: none"
+                    >
+                      Languages &#8613;
+                    </button>
+                  </div>
+                </div>
+                <button class="btn" id="rightBtn2" onclick="goToEducation()">
+                  &#8674;
+                </button>
+              </div>
+            </div>
+          </div>
+          <div id="educationContainer">
+            <div id="education">
+              <button class="btn" id="leftBtn" onclick="goToSkills()">
+                &#8672;
+              </button>
+              <div class="mobileHelper">
+                <div id="educationList">
+                  <div
+                    id="clg"
+                    style="
+                      background-image: linear-gradient(
+                        to right,
+                        darkorange,
+                        transparent
+                      );
+                    "
+                  >
+                    <p>2022 (Expected)</p>
+                    <p>
+                      B. Tech Electrical Engg from I.I.T. ROORKEE, Uttarakhand
+                    </p>
+                  </div>
+                  <div
+                    id="cp"
+                    style="
+                      background-image: linear-gradient(
+                        to right,
+                        blueviolet,
+                        transparent
+                      );
+                    "
+                  >
+                    <p>2018</p>
+                    <p>
+                      JEE preparation from Career Point University, Kota,
+                      Rajasthan
+                    </p>
+                  </div>
+                  <div
+                    id="12th"
+                    style="
+                      background-image: linear-gradient(
+                        to right,
+                        #54a900,
+                        transparent
+                      );
+                    "
+                  >
+                    <p>2018</p>
+                    <p>
+                      Class 12th from Global Public School (CBSE), Kota,
+                      Rajasthan
+                    </p>
+                  </div>
+                  <div
+                    id="10th"
+                    style="
+                      background-image: linear-gradient(
+                        to right,
+                        darkred,
+                        transparent
+                      );
+                    "
+                  >
+                    <p>2016</p>
+                    <p>
+                      Class 10th from Seventhday Adventist School (ICSE),
+                      Navsari, Gujarat
+                    </p>
+                  </div>
+                </div>
+                <div class="text">
+                  EDUCATION
+                  <p class="line animeLine" style="opacity: 1"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Work Section -->
+    <section id="myWork">
+      <h1 class="title">
+        My Work
+        <p class="line animeLine" style="opacity: 1"></p>
+      </h1>
+      <div id="projects">
+        <div id="tabHelper">
+          <div class="projectItem">
+            <button class="btn leftBtn" onclick="goLeft4()">&#8672;</button>
+            <div id="portfolioTemplate">
+              <div class="overview">
+                <img
+                  src="./Images/Backgrounds/WeShare.jpg"
+                  alt="Portfolio Template"
+                />
+              </div>
+              <div class="detail">
+                <div>
+                  <h1>WeShare</h1>
+                  <h3>- Personal Project</h3>
+                </div>
+                <p>
+                  This is a <strong>REALTIME WEB CHAT APPLICATION</strong> made
+                  using
+                  <strong> ReactJS, ExpressJS, NodeJS and SocketIO.</strong>
+                  Just join-in in a room with a unique username and share the
+                  room-name with your friends. <strong>That's it.</strong> This
+                  can be used for urjent and immediate chating by just signing
+                  up and joining in a room. Try it out! <i>Visit Live Site</i>
+                  <br />
+                  <strong
+                    >JoinIn page of WeShare is case-sensitive. Make sure the
+                    room name you share should be AS IT IS.</strong
+                  >
+                </p>
+                <div id="actions">
+                  <a target="_blank" href="https://github.com/prp2606/WeShare"
+                    ><button class="btn">Visit Code</button></a
+                  >
+                  <a target="_blank" href="https://weshare.netlify.app"
+                    ><button class="btn">Visit Site</button></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <button class="btn rightBtn" onclick="goRight1()">&#8674;</button>
+          </div>
+          <div class="projectItem">
+            <button class="btn leftBtn" onclick="goLeft1()">&#8672;</button>
+            <div id="sortingVisualizer">
+              <div class="overview">
+                <img
+                  src="./Images/Backgrounds/SortingVisualizer.jpg"
+                  alt="Sorting Visualizer"
+                />
+              </div>
+              <div class="detail">
+                <div>
+                  <h1>Sorting Algorithm Visualizer</h1>
+                  <h3>- Personal Project</h3>
+                </div>
+                <p>
+                  I am , from ever, very fascinated with
+                  <strong>Sorting Algorithms.</strong> This project gives us the
+                  visual perspective of how the sorting algorithms work
+                  <strong>behind the scene</strong> and also shows the
+                  <strong>shape and form</strong> of algorithm on the go. Want
+                  to understand it in depth? <i>Visit Live Site</i><br />
+                  <strong>Recommended: Open it in big screen</strong>
+                </p>
+                <div id="actions">
+                  <a
+                    href="https://github.com/prp2606/Sorting-Algorithm-Visualizer"
+                    ><button class="btn">Visit Code</button></a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://prp2606.github.io/SortingVisualizer/"
+                    ><button class="btn">Visit Site</button></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <button class="btn rightBtn" onclick="goRight2()">&#8674;</button>
+          </div>
+          <div class="projectItem">
+            <button class="btn leftBtn" onclick="goLeft2()">&#8672;</button>
+            <div id="chatArc">
+              <div class="overview">
+                <img src="./Images/Backgrounds/ChatArc.jpg" alt="Chat Arc" />
+              </div>
+              <div class="detail">
+                <div>
+                  <h1>Chat Arc</h1>
+                  <h3>- Personal Project</h3>
+                </div>
+                <p>
+                  This is an one to one chat web application built using
+                  <strong>NodeJS, ExpressJS and MongoDB(mongoose)</strong> in
+                  <strong>BACKEND</strong> and
+                  <strong>ReactJS and SocketIO</strong> in
+                  <strong>FRONTEND.</strong> Provides realtime chating
+                  experience with THE FASTEST AND MOST RELIABLE REAL-TIME ENGINE
+                  - SOCKET IO. It is enabled with many interesting features.
+                  Want to know? <i>Visit Code</i>
+                </p>
+                <div id="actions">
+                  <a target="_blank" href="https://github.com/prp2606/ChatArc"
+                    ><button class="btn">Visit Code</button></a
+                  >
+                </div>
+              </div>
+            </div>
+            <button class="btn rightBtn" onclick="goRight3()">&#8674;</button>
+          </div>
+          <div class="projectItem">
+            <button class="btn leftBtn" onclick="goLeft3()">&#8672;</button>
+            <div id="multipageLayout">
+              <div class="overview">
+                <img
+                  src="./Images/Backgrounds/multiTalented.jpg"
+                  alt="Multipage Layout"
+                />
+              </div>
+              <div class="detail">
+                <div>
+                  <h1>Multi-Talented</h1>
+                  <h3>- Personal Project</h3>
+                </div>
+                <p>
+                  This is a web application which is build upon the idea of
+                  gathering together, the commonly used applications by any
+                  individual. These applications are build from scratch using
+                  <strong>BOOTSTRAP, NODEJS, EXPRESSJS</strong> and
+                  <strong>raw HTML, CSS, JavaScript.</strong> What applications
+                  multi-talented provides? <i>Visit Live Site</i>
+                </p>
+                <div id="actions">
+                  <a
+                    target="_blank"
+                    href="https://github.com/prp2606/Multipage-Layout"
+                    ><button class="btn">Visit Code</button></a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://prp2606.github.io/MultiTalented/"
+                    ><button class="btn">Visit Site</button></a
+                  >
+                </div>
+              </div>
+            </div>
+            <button class="btn rightBtn" onclick="goRight4()">&#8674;</button>
+          </div>
+        </div>
+      </div>
+      <a target="_blank" href="https://github.com/prp2606/"
+        ><button class="btn" style="width: 200px; margin: 0%">
+          More Projects &gt;&gt;
+        </button></a
+      >
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="contactMe">
+      <h1 class="title">
+        Contact Me
+        <p class="line animeLine" style="opacity: 1"></p>
+      </h1>
+      <div id="contact">
+        <div id="options">
+          <div id="location">
+            <div>
+              <img src="./Images/Icons/location.png" alt="Location" />
+            </div>
+            <div>
+              <h3>WHERE TO FIND ME</h3>
+              <p>
+                - BS-11 Govind Bhavan, IIT Roorkee, Roorkee-247667, Uttarakhand
+              </p>
+              <p class="tabChange">
+                - Chandanvan, Vijalpore road, Navsari-396445, Gujarat
+              </p>
+            </div>
+          </div>
+          <div id="email">
+            <div>
+              <img src="./Images/Icons/mail.png" alt="Location" />
+            </div>
+            <div>
+              <h3>EMAIL ME AT</h3>
+              <p>- ppatil@ee.iitr.ac.in</p>
+              <p class="tabChange">- pratikravindrapatil2606@gmail.com</p>
+            </div>
+          </div>
+          <div id="phone">
+            <div>
+              <img src="./Images/Icons/phone.png" alt="Location" />
+            </div>
+            <div>
+              <h3>CALL ME AT</h3>
+              <p>+91-97725 65022</p>
+              <p class="tabChange">+91-94267 70037</p>
+            </div>
+          </div>
+        </div>
+        <div id="shorthands">
+          <a
+            target="_blank"
+            href="https://www.facebook.com/profile.php?id=100027397309682"
+            ><img src="./Images/Icons/facebook.png" alt="Facebook" />
+            <p>Facebook</p></a
+          >
+          <a target="_blank" href="https://www.instagram.com/prp2606_45/"
+            ><img src="./Images/Icons/instagram.png" alt="Instagram" />
+            <p>Instagram</p></a
+          >
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/pratikravindrapatil2606"
+            ><img src="./Images/Icons/linkedin.png" alt="Linkedin" />
+            <p>LinkedIn</p></a
+          >
+          <a
+            target="_blank"
+            href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=pratikravindrapatil2606@gmail.com"
+            id="mail"
+            ><img src="./Images/Icons/mail.png" alt="mail" />
+            <p>Mail</p></a
+          >
+          <a target="_blank" href="#" id="call"
+            ><img src="./Images/Icons/phone.png" alt="call" />
+            <p>+91-97725 65022</p></a
+          >
+          <a target="_blank" href="https://github.com/prp2606/"
+            ><img src="./Images/Icons/github.png" alt="GitHub" />
+            <p>GitHub</p></a
+          >
+        </div>
+      </div>
+      <footer>
+        <div id="footContent">
+          <p>
+            This website is created from scratch and with &#9829; by
+            <span>PRATIK PATIL</span>
+          </p>
+          <p>Copyright © PRATIK PATIL | All Rights Reserved</p>
+          <p>
+            This website is created from scratch and with &#9829; by
+            <span>PRATIK PATIL</span>
+          </p>
+        </div>
+      </footer>
+    </section>
+
+    <!-- Footer -->
+
+    <script src="./Scripts/mainScript.js"></script>
+  </body>
+</html>

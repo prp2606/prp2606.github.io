@@ -1,0 +1,282 @@
+@media only screen and (max-width: 700px) {
+  #fixedBG {
+    display: none;
+  }
+
+  #opaque {
+    opacity: 1;
+  }
+
+  .navItems {
+    width: 100vw;
+    background-color: black;
+  }
+
+  #intro {
+    align-items: center;
+    width: 95vw;
+  }
+
+  #aboutMe {
+    width: 95vw;
+  }
+
+  .content {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+
+  #front {
+    width: 200px;
+    height: 250px;
+    border-radius: 200px;
+  }
+
+  #back {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    padding: 0px 10px;
+    margin-top: 30px;
+  }
+
+  .content .btn {
+    margin: auto;
+  }
+
+  #primaryInfo,
+  #secondaryInfo {
+    display: block;
+    text-align: center;
+  }
+
+  .primaryInfo > h3,
+  .primaryInfo > p,
+  .secondaryInfo > h3,
+  .secondaryInfo > p {
+    display: none;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .text,
+  #educationContainer .text {
+    font-size: 1.5rem;
+    text-align: center;
+    transform: rotate(0deg);
+  }
+
+  .text p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  #languages,
+  #frameworks {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: 700;
+    height: 50%;
+  }
+
+  .mobileHelper {
+    flex-direction: column;
+  }
+
+  #educationContainer .mobileHelper {
+    flex-direction: column-reverse;
+  }
+
+  #educationList div {
+    font-size: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 25px auto;
+    border-radius: 20px;
+    padding: 5px 10px;
+  }
+
+  #rightBtn1,
+  #rightBtn2,
+  #leftBtn,
+  .rightBtn,
+  .leftBtn {
+    width: 8%;
+    font-size: 2rem;
+  }
+
+  #shorthands a {
+    width: fit-content;
+    margin: auto;
+  }
+
+  #shorthands a p {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navLinks {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  #dynamicPhrase,
+  .dynamicPhrase {
+    margin: 20px 0px;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  #staticPhrase {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  #linksToMe a img {
+    height: 40px;
+    width: 40px;
+  }
+
+  #aboutMe {
+    width: 100vw;
+  }
+
+  .projectItem {
+    width: 100%;
+    height: 450px;
+  }
+
+  .overview {
+    height: 50%;
+  }
+
+  .detail {
+    transform: translateY(0px);
+    height: 50%;
+    padding: 5px 5px;
+  }
+
+  .detail h1 {
+    font-size: 1.2rem;
+  }
+
+  .detail h3 {
+    font-size: 1rem;
+  }
+
+  .detail p {
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+  }
+
+  #actions a {
+    margin-top: 10px;
+  }
+
+  #actions button {
+    width: 90px;
+    font-size: 0.8rem;
+    padding: 4px 4px;
+  }
+  #sortingVisualizer,
+  #chatArc,
+  #portfolioTemplate,
+  #multipageLayout {
+    width: 100%;
+  }
+
+  #sortingVisualizer:hover .detail,
+  #chatArc:hover .detail,
+  #portfolioTemplate:hover .detail,
+  #multipageLayout:hover .detail {
+    transform: translateY(0px);
+  }
+
+  #tabHelper {
+    /* animation: slideShow 20s ease-in-out 0s infinite; */
+    transition: all 1s ease-in-out 0s;
+  }
+
+  #tabHelper:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes slideShow {
+    0% {
+      transform: translateX(0%);
+    }
+    20% {
+      transform: translateX(0%);
+    }
+    25% {
+      transform: translateX(-25%);
+    }
+    45% {
+      transform: translateX(-25%);
+    }
+    50% {
+      transform: translateX(-50%);
+    }
+    70% {
+      transform: translateX(-50%);
+    }
+    75% {
+      transform: translateX(-75%);
+    }
+    95% {
+      transform: translateX(-75%);
+    }
+    100% {
+      transform: translateX(-0%);
+    }
+  }
+
+  #lightMode,
+  #darkMode,
+  #scrollToTop {
+    width: 40px;
+    height: 40px;
+  }
+
+  #scrollToTop {
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+
+  #options div img {
+    display: none;
+  }
+
+  #hamBurger {
+    width: 50px;
+  }
+
+  .hamBurgerBtn {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .projectItem {
+    width: 100%;
+    height: 480px;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  .projectItem {
+    width: 100%;
+    height: 520px;
+  }
+}

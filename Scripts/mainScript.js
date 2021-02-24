@@ -90,6 +90,7 @@ const cursorBlink = document.querySelector(".cursor");
 
 const typewriter = [
   "Hello, કેમ છો, नमस्कार!",
+  "I am Pratik Patil."
   "Welcome to my Portfolio.",
   "Let me walk you through my profile.",
 ];
